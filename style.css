@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(79,79,79,0), rgb(157,157,157));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.6s ease-in-out;
+}
+#app-body {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+    padding-top: 5.2rem;
+    margin: 0;
+}
+
+.weather_header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #a5a5a578;
+    border-radius: 20rem;
+
+    & .city-name {
+        border: none;
+        width: 100%;
+        height: 7rem;
+        border-radius: 20rem;
+        padding: 0rem 1rem;
+    }
+
+    & .weather_search {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 0rem 4rem;
+    }
+}
+
+.weather_search:focus-within {
+    outline: 0.1rem solid black;
+    border-radius: 20rem;
+}
+
+.weather_data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & p {
+        font-size: 8rem;
+        margin-right: 3rem;
+    }
+
+}
+
+.weather_forecast {
+    background-color: #a5a5a5cd;
+    text-align: center;
+    width: 14rem;
+    margin: auto;
+    border-radius: 20rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.weather-content {
+    font-size: 1.8rem;
+    width: 70%;
+    margin: auto;
+}
+
+.weather_body {
+    margin-top: 4rem;
+}
+
+.weather_info {
+    padding: 3.2rem 0rem;
+}
+
+.grid {
+    display: grid;
+    gap: 6.2rem;
+    margin-bottom: 2rem;
+}
+
+.grid-cols--two {
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.weather_minmax {
+    margin-top: 3rem;
+
+    & .weather_min,
+    .weather_max {
+        background-color: #a5a5a5cd;
+        text-align: center;
+        width: 14rem;
+        margin: auto;
+        border-radius: 20rem;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+}
+
+.weather-temperature {
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.weather-box {
+    width: 100%;
+    border: none;
+    padding: 2rem 4rem;
+    margin: auto;
+    display: flex;
+    border-radius: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a5a5a578;
+
+    & h5 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    & .icon {
+        font-size: 3rem;
+    }
+}
