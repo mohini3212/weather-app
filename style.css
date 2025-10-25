@@ -38,13 +38,14 @@ body {
 .weather_header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #a5a5a578;
     border-radius: 20rem;
 
     & .city-name {
         border: none;
         width: 100%;
-        height: 7rem;
+        height: 6rem;
         border-radius: 20rem;
         padding: 0rem 1rem;
     }
@@ -67,12 +68,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    place-content: center;
+    place-items: center;
+    margin: auto;
+    width: 100%;
 
     & p {
         font-size: 8rem;
         margin-right: 3rem;
     }
-
+& .weather_icon img{
+    width: 15rem;
+}
 }
 
 .weather_forecast {
@@ -81,7 +88,7 @@ body {
     width: 14rem;
     margin: auto;
     border-radius: 20rem;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     font-size: 2rem;
 
 }
@@ -132,10 +139,10 @@ input {
     }
 }
 
-.weather-temperature {
+/* .weather-temperature {
     font-size: 2.7rem;
     text-align: center;
-}
+} */
 
 .weather-box {
     width: 100%;
@@ -156,4 +163,47 @@ input {
     & .icon {
         font-size: 3rem;
     }
+}
+
+/* ************media query*************** */
+@media (width <=768px) {
+    html {
+    font-size: 56.25%;
+ 
+  }
+  .grid{
+      gap: 2.2rem;
+  }
+  .grid-cols--two {
+    grid-template-columns: 1fr;
+
+}
+.weather-content {
+    
+    width: 96%;
+    margin: auto;
+}
+    .weather_data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    place-content: center;
+    place-items: center;
+    margin: auto;
+
+    & p{
+        font-size: 6rem;
+                margin-right: 1rem;
+    }
+    & .weather_icon img{
+    width: 12rem;
+}
+}
+}
+
+@media (width <=500px){
+html {
+    font-size: 50%;
+  }
 }
